@@ -7,19 +7,18 @@ import java.util.Scanner;
 /**
  * @author Yu-Ju Chen
  */
+
 public class Main {
     public static void main(String[] args) {
-
-        //        Solution solution = new Solution();
-        //        String output = solution.summarizeCollection(solution.collect("1,3,6,7,8,12,13,14,15,21,22,23,24,31"));
-        //        System.out.println(output);
-
         NumberRangeSummarizer solution = new Solution();
         String inputData = readInputFile("src/main/input.txt");
         String output = solution.summarizeCollection(solution.collect(inputData));
         System.out.println("Result: " + output);
     }
 
+    /**
+     * Method used to read data from input.txt, and returns a valid string to be summarized into ranges
+     */
     public static String readInputFile(String fileName) {
         String inputData = "";
         try {

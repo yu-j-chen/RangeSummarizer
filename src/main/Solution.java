@@ -5,7 +5,9 @@ import java.util.Collection;
 
 public class Solution implements NumberRangeSummarizer{
 
-    // collect the input
+    /**
+     * Method takes as input a string, and formats it appropriately to the required data structure
+     */
     public Collection<Integer> collect(String input){
         Collection<Integer> listOfIntegers = new ArrayList<Integer>();
         for (String s : input.split(","))
@@ -13,7 +15,11 @@ public class Solution implements NumberRangeSummarizer{
         return listOfIntegers;
     }
 
-    // get the summarized string
+
+    /**
+     * Method takes as input a collection of integers, and produces a comma delimited list of numbers
+     * whereby it groups the sequential numbers into a range
+     */
     public String summarizeCollection(Collection<Integer> input){
         String finalOutput = "";
 
