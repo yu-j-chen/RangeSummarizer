@@ -10,8 +10,10 @@ public class Solution implements NumberRangeSummarizer{
      */
     public Collection<Integer> collect(String input){
         Collection<Integer> listOfIntegers = new ArrayList<Integer>();
-        for (String s : input.split(","))
-            listOfIntegers.add(Integer.parseInt(s));
+        for (String s : input.split(",")) {
+            if (!s.equals(""))
+                listOfIntegers.add(Integer.parseInt(s));
+        }
         return listOfIntegers;
     }
 
